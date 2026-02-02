@@ -1,90 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            width: 420px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        }
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        h1 {
-            margin-bottom: 10px;
-            color: #333;
-        }
+    .card {
+      background: #ffffff;
+      max-width: 420px;
+      width: 90%;
+      padding: 30px 25px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
 
-        h3 {
-            margin-top: 25px;
-            color: #444;
-        }
+    h1 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #333;
+    }
 
-        p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+    p {
+      color: #555;
+      font-size: 15px;
+    }
 
-        .tagline {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #667eea;
-        }
+    .tagline {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #667eea;
+    }
 
-        hr {
-            border: none;
-            height: 1px;
-            background: #ddd;
-            margin: 25px 0;
-        }
-    </style>
+    .price {
+      margin: 14px 0;
+      font-weight: bold;
+      color: #27ae60;
+      font-size: 16px;
+    }
 
+    hr {
+      margin: 22px 0;
+      border: none;
+      border-top: 1px solid #eee;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin: 6px 0;
+      color: #555;
+    }
+
+    .skills {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 18px;
+      text-decoration: none;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>Hello! I build websites 🚀</h1>
-        <p>I create clean, responsive websites using HTML & CSS.</p>
+  <div class="card">
+    <h1>Hello! I build websites 🚀</h1>
 
-        <p class="tagline">Creative • Curious • Enthusiastic</p>
+    <p>I create clean, responsive websites using HTML & CSS.</p>
 
-        <hr>
-
-        <h3>What I Do</h3>
-        <p>
-            ✔ Business websites<br>
-            ✔ Student projects<br>
-            ✔ Landing pages
-        </p>
-
-        <h3>Skills</h3>
-        <p>
-            HTML • CSS • Basic JavaScript
-        </p>
-
-        <h3>Contact</h3>
-        <p>
-    WhatsApp:
-    <a href="https://wa.me/918074381335" target="_blank">
-        Message me on WhatsApp (Fast response)
-    </a>
-</p>
+    <div class="tagline">
+      Creative  • Curious  • Enthusiastic
     </div>
+
+    <div class="price">
+      Affordable websites starting from ₹499
+    </div>
+
+    <hr>
+
+    <h3>What I Do</h3>
+    <ul>
+      <li>✔ Business websites</li>
+      <li>✔ Student projects</li>
+      <li>✔ Landing pages</li>
+    </ul>
+
+    <hr>
+
+    <h3>Skills</h3>
+    <p class="skills">HTML • CSS • Basic JavaScript</p>
+
+    <hr>
+
+    <h3>Contact</h3>
+    <a class="whatsapp"
+       href="https://wa.me/918074381335"
+       target="_blank">
+      Message me on WhatsApp (Fast response)
+    </a>
+  </div>
 
 </body>
 </html>
